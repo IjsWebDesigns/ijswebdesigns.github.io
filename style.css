@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.main-body{
+    height: 100vh;
+    width: 100%;
+}
+.footer-container{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: lightcoral;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.symbol{
+    color: lightcyan;
+    margin-right: 4px;
+    display: inline;
+    float: none;
+    line-height: 180%;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.timestamp{
+    display: inline;
+    margin-right: 12px;
+    float: none;
+    line-height: 180%;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.companyname{
+    display: inline;
+    text-transform: uppercase;
+    font-family: monospace;
+    letter-spacing: 5px;
+    font-weight: bold;
+    float: none;
+    line-height: 180%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+.companyname,.timestamp,.symbol{
+    font-size: 28px;    
+}
+/*Media Queries*/
+@media screen and (max-width: 2000px) and (min-width: 750px){
+    .symbol,.timestamp,.companyname{
+    font-size: 36px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .symbol,.timestamp,.companyname{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 320px){
+    .symbol,.timestamp,.companyname{
+        font-size: 18px;
+    }
+}
+/* --------------------------------------------CSS for FOOTER Ends Here---------------------------------------- */
+.box{
+    background-color: burlywood;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    filter: drop-shadow(10px 10px 2px gray);
+    background: linear-gradient(85deg, red 0%, green 50%, blue 100%);
+}
+.box div{
+    text-align: center;
+    font-family: serif;
+    font-size: 60px;
+    text-shadow: 3.2px 0px black;
+    padding: 10px 10px;
+    color: snow;
+}
+
+@media screen and (max-width: 700px){
+    .box div{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 480px){
+    .box div{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 375px){
+    .box div{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 320px){
+    .box div{
+        font-size: 25px;
+    }
+}
+    
+.main-body{
+    background-color: darkgrey;
+}

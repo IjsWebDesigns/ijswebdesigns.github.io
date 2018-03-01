@@ -1,6 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .main-body{
     width: 100%;
@@ -37,20 +39,60 @@
     font-size: 30px;
     color: white;
 }
+@media screen and (max-width:450px){
+    .footer-container{
+        font-size: 30px;
+    }
+    .companyname{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:425px){
+    .footer-container{
+        font-size: 28px;
+    }
+    .companyname{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width:410px){
+    .footer-container{
+        font-size: 26px;
+    }
+    .companyname{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:395px){
+    .footer-container{
+        font-size: 24px;
+    }
+    .companyname{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:360px){
+    .footer-container{
+        font-size: 22px;
+    }
+    .companyname{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:340px){
+    .footer-container{
+        font-size: 18px;
+    }
+    .companyname{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width:306px){
     .footer-container{
         font-size: 20px;
     }
     .companyname{
         font-size: 18px;
-    }
-}
-@media screen and (max-width:321px){
-    .footer-container{
-        font-size: 18px;
-    }
-    .companyname{
-        font-size: 16px;
     }
 }
 @media screen and (max-width:305px){

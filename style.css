@@ -37,7 +37,7 @@
     font-size: 30px;
     color: white;
 }
-@media screen and (max-width:320px) and (min-width:306px){
+@media screen and (max-width:306px){
     .footer-container{
         font-size: 20px;
     }
@@ -45,19 +45,35 @@
         font-size: 18px;
     }
 }
-@media screen and (max-width:400px) and (min-width:321px){
+@media screen and (max-width:321px){
     .footer-container{
-        font-size: 22px;
+        font-size: 18px;
     }
     .companyname{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width:305px){
+    .footer-container{
+        font-size: 18px;
+    }
+    .companyname{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:304px){
     .footer-container{
         font-size: 16px;
     }
     .companyname{
         font-size: 14px;
+    }
+}
+@media screen and (max-width:270px){
+    .footer-container{
+        font-size: 14px;
+    }
+    .companyname{
+        font-size: 12px;
     }
 }

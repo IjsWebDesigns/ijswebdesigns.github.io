@@ -39,6 +39,30 @@
     font-size: 30px;
     color: white;
 }
+.text-box{
+    text-align: center;
+    margin-top: 40vh;
+}
+.main-text{
+    font-family: Helvetica Narrow,sans-serif;
+    letter-spacing: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+}
+.box{
+    background-color: black;
+    height: 100px;
+    width: 480px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-52%);
+    opacity: 1;
+    z-index: -1;
+}
+/*-------------------------------------------------------Media Queries-------------------------------------------*/
 @media screen and (max-width:450px){
     .footer-container{
         font-size: 30px;

@@ -155,6 +155,11 @@
     .companyname{
         font-size: 14px;
     }
+    .text{
+        left: 18%;
+        transform-origin: left;
+        transform: scale(.3, .4);
+    }
 }
 @media screen and (max-width:270px){
     .footer-container{
@@ -162,5 +167,10 @@
     }
     .companyname{
         font-size: 12px;
+    }
+    .text{
+        left: 16%;
+        transform-origin: left;
+        transform: scale(.3, .4);
     }
 }

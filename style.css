@@ -1,176 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Aguafina+Script");
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Aldrich");
+@import url("https://fonts.googleapis.com/css?family=Allerta");
+
 *{
     margin: 0px;
-    padding: 0px;
 }
-.main-body{
-    width: 100%;
-    height: 100%;
+body{
     box-sizing: border-box;
     overflow: hidden;
 }
-.footer-container{
-    text-align: center;
+header{
+    background-color: gainsboro;
     width: 100%;
+    height: 80px;
     position: absolute;
-    bottom: 0%;
-    left: 0%;
-    padding: 15px 0px;
-    font-size: 32px;
-    background-color: black;
-    box-sizing: border-box;
-    overflow: hidden;
 }
-.symbol,.timestamp,.companyname{
-    display: inline;
-    text-transform: uppercase;
+.title{
+    font-size: 110px;
+    font-family: "Aguafina Script",cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+    transform-origin: 0 0;
+    transform: scale(1,1);
+    position: absolute;
+    top: 0;
+    left: 100px;
+    margin-top: -14px;
 }
-.symbol{
-    color: aliceblue;
-    padding-right: 6px;
+.title-1{
+    font-family: "Abel",sans-serif;
+    color: gainsboro;
+    text-shadow: 2px 2px black;
+    font-size: 50px;
+    vertical-align: bottom;
+    line-height: 90px;
+    margin-left: -30px;
 }
-.timestamp{
-    padding-right: 12px;
-    color: bisque;
-}
-.companyname{
-    font-family: sans-serif;
-    letter-spacing: 5px;
-    font-weight: bold;
+.contact-info{
+    font-family: "Aldrich",sans-serif;
     font-size: 30px;
-    color: white;
-}
-.text{
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Helvetica Narrow,sans-serif;
-    font-size: 40px;
-    letter-spacing: 25px;
-    background-color: black;
-    color: white;
-    width: 609px;
-    padding: 30px 10px 30px 30px;
-    overflow: hidden;
-    box-sizing: border-box;
+    right: 40px;
+    top: 10px;
+    transform-origin: 100% 0%;
+    color: gray;
 }
+.contact-adrs{
+    font-family: "Allerta",sans-serif;
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    transform-origin: 100% 0%;
+}
+/*--------------------------------------------------MEDIA QUERIES--------------------------------------------*/
 
-/*-------------------------------------------------------Media Queries-------------------------------------------*/
-@media screen and (max-width: 700px){
-    .text{
-        transform: scale(.8, .9);
-        left: 0;
+@media screen and (max-width: 340px){
+    .title{
+        transform: scale(.5,.5);
+        left: 20px;
+        margin-top: -6px;
     }
-}
-@media screen and (max-width: 500px){
-    .footer-container{
-        font-size: 26px;
+    .contact-info{
+        
+        transform: scale(.5,.5);
+        right: 10px;
+        top: 5px;
     }
-    .companyname{
-        font-size: 24px;
+    .contact-adrs{
+        transform: scale(.5,.5);
+        right: 10px;
+        top: 20px;
     }
-    .text{
-        transform: scale(.5, .6);
-        left: 18%;
-        transform-origin: left;
-        top: 25%;
-    }
-}
-@media screen and (max-width:450px){
-    .footer-container{
-        font-size: 30px;
-    }
-    .companyname{
-        font-size: 28px;
-    }
-}
-@media screen and (max-width:425px){
-    .footer-container{
-        font-size: 28px;
-    }
-    .companyname{
-        font-size: 26px;
-    }
-}
-@media screen and (max-width:410px){
-    .footer-container{
-        font-size: 26px;
-    }
-    .companyname{
-        font-size: 24px;
-    }
-}
-@media screen and (max-width:395px){
-    .footer-container{
-        font-size: 24px;
-    }
-    .companyname{
-        font-size: 22px;
-    }
-}
-@media screen and (max-width:360px){
-    .footer-container{
-        font-size: 22px;
-    }
-    .companyname{
-        font-size: 20px;
-    }
-}
-@media screen and (max-width:340px){
-    .footer-container{
-        font-size: 18px;
-    }
-    .companyname{
-        font-size: 16px;
-    }
-    .text{
-        transform: scale(.4, .5);
-        left: 12%;
-        transform-origin: left;
-        top: 30%;
-    }
-}
-@media screen and (max-width:306px){
-    .footer-container{
-        font-size: 20px;
-    }
-    .companyname{
-        font-size: 18px;
-    }
-}
-@media screen and (max-width:305px){
-    .footer-container{
-        font-size: 18px;
-    }
-    .companyname{
-        font-size: 16px;
-    }
-}
-@media screen and (max-width:304px){
-    .footer-container{
-        font-size: 16px;
-    }
-    .companyname{
-        font-size: 14px;
-    }
-    .text{
-        left: 18%;
-        transform-origin: left;
-        transform: scale(.3, .4);
-    }
-}
-@media screen and (max-width:270px){
-    .footer-container{
-        font-size: 14px;
-    }
-    .companyname{
-        font-size: 12px;
-    }
-    .text{
-        left: 16%;
-        transform-origin: left;
-        transform: scale(.3, .4);
+    header{
+        height: 40px;
     }
 }

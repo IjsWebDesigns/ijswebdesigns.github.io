@@ -2,78 +2,210 @@
 @import url("https://fonts.googleapis.com/css?family=Abel");
 @import url("https://fonts.googleapis.com/css?family=Aldrich");
 @import url("https://fonts.googleapis.com/css?family=Allerta");
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css?family=Quantico");
 
 *{
     margin: 0px;
 }
 body{
-    box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
-header{
-    background-color: gainsboro;
-    width: 100%;
-    height: 80px;
-    position: absolute;
-}
+/*----------------------------------MAIN TITLE------------*/
 .title{
     font-size: 110px;
     font-family: "Aguafina Script",cursive;
-    color: white;
-    text-shadow: 2px 2px black;
+    color: aqua;
+    text-shadow: 2px 2px black,4px 4px black;
     transform-origin: 0 0;
-    transform: scale(1,1);
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 100px;
-    margin-top: -14px;
+    left: 90px;
+    margin-top: -4px;
 }
 .title-1{
     font-family: "Abel",sans-serif;
-    color: gainsboro;
-    text-shadow: 2px 2px black;
+    color: white;
+    text-shadow: 1px 1px gray,2px 1px gray,3px 1px gray,3.5px 1px gray;
     font-size: 50px;
     vertical-align: bottom;
-    line-height: 90px;
-    margin-left: -30px;
+    line-height: 80px;
+    margin-left: -40px;
 }
+/*--------------------------CONTACT INFORMATION-------------------------*/
 .contact-info{
     font-family: "Aldrich",sans-serif;
     font-size: 30px;
-    position: absolute;
-    right: 40px;
-    top: 10px;
-    transform-origin: 100% 0%;
     color: gray;
 }
 .contact-adrs{
     font-family: "Allerta",sans-serif;
     font-size: 20px;
-    position: absolute;
+    color: lightcyan;
+}
+.contain-info{
+    background-color: rgba(0,0,0,.6);
+    position: fixed;
     right: 40px;
-    top: 40px;
+    top: 20px;
+    padding: 10px;
     transform-origin: 100% 0%;
+}
+/*----------------------------BACKGROUND IMAGE---------------------------*/
+.cover{
+    background-image: url("Lead%20Developer.jpg");
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+}
+.cover-1{
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+/*------------------------------------FIRST MAIN HEADING---------------*/
+.head-1{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 23vh;
+    width: 100vw;
+    height: 77vh;
+    background-color: rgba(255,255,255,.1);
+    font-size: 60px;
+    font-family: "Aldrich",sans-serif;
+    transform-origin: center;
+    overflow: hidden;
+}
+.head-1 .section section{
+    display: inline;
+}
+.head-1 .section{
+    font-family: "Quantico",sans-serif;
+    font-size: 35px;
+    vertical-align: text-bottom;
+    text-align: center;
+    letter-spacing: 5px;
+    color: darkgray;
+}
+                /*--SECTION ONE--*/
+.head-1 .section .one{
+    position: absolute;
+    left: 8vw;
+    top: 10px;
+}
+                /*img-1 POSITION*/
+.head-1 .section .one .img-1,.img-2,.img-3{
+    width: 200px;
+    font-size: 18px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+    left: -100px;
+}
+                /*img-2 POSITION*/
+.head-1 .section .one .img-2{
+    top: -191px;
+    left: 130px;
+}
+                /*img-3 POSITION*/
+.head-1 .section .one .img-3{
+    top: -170px;
+    left: 15px;
+}
+                /*-STYLING-*/
+.head-1 .section .one .img-1 span,.img-2 span,.img-3 span{
+    display: block;
+    transform: scale(1);
+    color: aquamarine;
+    background-color: black;
+    opacity: 1;
+}
+.head-1 .section .one .img-1 span:nth-child(3),.img-2 span:nth-child(3),.img-3 span:nth-child(3){
+    color: white;
+}
+.head-1 .section .one .img-1 img,.img-2 img,.img-3 img{
+    transform: scale(1.8);
+    filter: grayscale(1);
+    opacity: .5;
+    transition: .5s;
+    transition-delay: -.1s;
+    margin-bottom: -8px;
+}
+                    /*-HOVER OVERS-*/
+.head-1 .section .one .img-1:hover img,.img-2:hover img,.img-3:hover img{
+    transform: scale(1);
+    filter: none;
+    opacity: 1;
+    cursor: pointer;
+}
+.head-1 .section .one .img-1:hover span,.img-2:hover span,.img-3:hover span{
+    color: white;
+    cursor: pointer;
+}
+.head-1 .section .one .img-1:hover span:nth-child(3),.img-2:hover span:nth-child(3),.img-3:hover span:nth-child(3){
+    color: cornflowerblue;
+}
+
+                    /*--SECTION TWO--*/
+.head-1 .section .two{
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+.head-1 .section .two .details{
+    font-size: 20px;
+    color: gainsboro;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.head-1 .section .two .details ul{
+    text-decoration: none;
+    list-style: square;
+    list-style-position: inside;
+    text-align: left;
+}
+.head-1 .section .two .details ul li{
+    margin-bottom: 15px;
+}
+
+                    /*--SECTION THREE--*/
+.head-1 .section .three{
+    position: absolute;
+    right: 8vw;
+    top: 10px;
 }
 /*--------------------------------------------------MEDIA QUERIES--------------------------------------------*/
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 320px) and (orientation: portrait){
     .title{
-        transform: scale(.5,.5);
-        left: 20px;
-        margin-top: -6px;
+        position: absolute;
+        transform: scale(.5);
+        left: 15px;
+        margin-top: -4px;
     }
-    .contact-info{
-        
-        transform: scale(.5,.5);
-        right: 10px;
-        top: 5px;
+    .contain-info{
+        position: absolute;
+        transform: scale(.5);
+        top: 8px;
+        right: 5px;
     }
-    .contact-adrs{
-        transform: scale(.5,.5);
-        right: 10px;
-        top: 20px;
+    .cover,.cover-1{
+        height: 292vh;
+        background-position: 40%;
     }
-    header{
-        height: 40px;
+    .head-1{
+        display: none;
     }
 }
+
